@@ -1,0 +1,6 @@
+{
+  "name": "Vision VR Production - Immersive Art Studio Egypt",
+  "description": "Vision VR Production is an Egyptian immersive art studio specializing in 360° VR films, event coverage, and spatial memories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

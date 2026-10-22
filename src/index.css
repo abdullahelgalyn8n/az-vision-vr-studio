@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #070707;
+    --neon-lime: #b4ff39;
+    --sand-gold: #d4af37;
+  }
+
+  body {
+    background-color: #070707;
+    color: #e5e5e5;
+    font-family: 'Syne', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom typography classes */
+  .font-poetic {
+    font-family: 'Cormorant Garamond', Garamond, 'Times New Roman', Georgia, serif;
+  }
+
+  .font-mono-tech {
+    font-family: 'Space Mono', 'Cairo', 'Segoe UI', monospace, sans-serif;
+  }
+
+  .font-arabic {
+    font-family: 'Amiri', 'Cairo', 'Traditional Arabic', 'Segoe UI', Tahoma, sans-serif;
+  }
+
+  .font-cairo {
+    font-family: 'Cairo', 'Amiri', 'Segoe UI', Tahoma, Arial, sans-serif;
+  }
+}
+
+/* Fallback for Arabic characters in any container */
+[dir="rtl"], .lang-ar {
+  font-family: 'Cairo', 'Amiri', 'Segoe UI', Tahoma, Arial, sans-serif !important;
+}
+
+[dir="rtl"] .font-mono-tech,
+[dir="rtl"] [class*="tracking-"] {
+  font-family: 'Cairo', 'Amiri', 'Segoe UI', Tahoma, Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+/* Subtle glow and atmospheric styling */
+.neon-glow-lime {
+  text-shadow: 0 0 16px rgba(180, 255, 57, 0.45);
+}
+
+.box-glow-lime {
+  box-shadow: 0 0 24px -4px rgba(180, 255, 57, 0.25);
+}
+
+.box-glow-eye {
+  filter: drop-shadow(0 0 20px rgba(180, 255, 57, 0.35));
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b4ff39;
+}
