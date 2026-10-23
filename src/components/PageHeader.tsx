@@ -64,30 +64,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
           </p>
         </div>
 
-        {/* Minimalist copy link button */}
-        <div className="flex items-center gap-3 shrink-0">
-          <button
-            onClick={handleCopyLink}
-            type="button"
-            className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 hover:border-neutral-700 text-xs text-neutral-300 hover:text-white transition-all cursor-pointer ${
-              isRtl ? 'font-cairo font-semibold' : 'font-mono-tech'
-            }`}
-            title={isRtl ? 'نسخ رابط الصفحة' : 'Copy page URL'}
-            aria-label="Copy page link"
-          >
-            {copied ? (
-              <>
-                <Check className="w-3.5 h-3.5 text-[#b4ff39]" />
-                <span className="text-[#b4ff39]">{isRtl ? 'تم نسخ الرابط' : 'COPIED'}</span>
-              </>
-            ) : (
-              <>
-                <Share2 className="w-3.5 h-3.5 text-neutral-400" />
-                <span>{isRtl ? 'مشاركة الرابط' : 'SHARE URL'}</span>
-              </>
-            )}
-          </button>
-        </div>
+        
       </div>
     </div>
   );
