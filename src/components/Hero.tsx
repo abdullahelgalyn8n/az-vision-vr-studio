@@ -20,7 +20,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onStepInside }) => {
   return (
     <section className="relative min-h-[82vh] flex flex-col items-center justify-center text-center px-4 pt-12 pb-20 overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[350px] bg-gradient-to-b from-[#b4ff39]/12 via-[#d4af37]/8 to-transparent rounded-full blur-[110px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[550px] max-w-full h-[350px] bg-gradient-to-b from-[#b4ff39]/12 via-[#d4af37]/8 to-transparent rounded-full blur-[110px] pointer-events-none" />
 
       {/* Subtle background star dust / celestial grid */}
       <div 

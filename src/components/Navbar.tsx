@@ -103,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentLang, onToggleLang }) => 
           {/* Primary Action Button */}
           <Link
             to="/contact"
-            className={`px-4 py-2 border rounded-lg text-xs tracking-wider transition-all cursor-pointer whitespace-nowrap ${
+            className={`hidden sm:inline-block px-4 py-2 border rounded-lg text-xs tracking-wider transition-all cursor-pointer whitespace-nowrap ${
               isActive('/contact')
                 ? 'bg-[#b4ff39] text-black border-[#b4ff39] font-bold shadow-[0_0_20px_rgba(180,255,57,0.3)]'
                 : 'border-neutral-700 hover:border-[#b4ff39] text-neutral-200 hover:text-white bg-neutral-950'
